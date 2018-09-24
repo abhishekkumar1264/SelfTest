@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utility.report"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.pack.TestCase">
+        <methods>
+          <include name="validateProfile"/>
+          <include name="browserInitialization"/>
+          <include name="terminateBrowser"/>
+          <include name="goToCart"/>
+          <include name="purchaseIphone" invocation-numbers="0"/>
+          <include name="loginProfile"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- com.pack.TestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
