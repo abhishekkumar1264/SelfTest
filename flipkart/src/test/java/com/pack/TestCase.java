@@ -26,6 +26,7 @@ public class TestCase{
 	public void browserInitialization() throws InterruptedException {
 		System.out.println("launching firefox browser");
 		System.setProperty("webdriver.gecko.driver",driverPath);
+		
 		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
 		driver=new FirefoxDriver();
 		driver.get(baseUrl);
